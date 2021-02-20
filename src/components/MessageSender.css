@@ -29,7 +29,7 @@
 .sender__top > form > input {
   outline-width: 0;
   border: none;
-  padding: 5px 20px;
+  padding: 12px 20px;
   margin: 0 10px;
   border-radius: 999px;
   background-color: #eff2f5;
@@ -44,14 +44,24 @@
 }
 
 .sender__options {
+  display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  padding: 3px 15px;
+  box-sizing: border-box;
 }
 
 .sender__option {
-  padding: 20px;
+  flex: 1;
+  padding: 10px;
   display: flex;
+  justify-content: center;
   color: gray;
   margin: 5px;
+}
+
+.sender__option > .MuiSvgIcon-root {
+  font-size: x-large;
 }
 
 .sender__option > h3 {

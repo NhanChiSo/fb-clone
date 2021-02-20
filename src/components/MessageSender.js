@@ -24,6 +24,7 @@ function MessageSender() {
     setStatus("");
     setImageURL("");
   };
+  let name = user.displayName.split(" ");
   return (
     <div className="sender">
       <div className="sender__top">
@@ -33,12 +34,12 @@ function MessageSender() {
             value={status} //reset input
             onChange={(e) => setStatus(e.target.value)}
             className="sender__input"
-            placeholder="Bạn đang nghĩ gì?"
+            placeholder={`What's on your mind, ${name[0]}?`}
           />
           <input
             value={imageURL} //reset input
             onChange={(e) => setImageURL(e.target.value)}
-            placeholder="Có thể nhập thêm URL ảnh!"
+            placeholder="Image URL (optional)"
           />
           <button type="submit" onClick={handleSubmit}>
             Hidden

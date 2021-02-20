@@ -2,9 +2,9 @@ import "./App.css";
 import Feed from "./components/Feed";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import Widgets from "./components/Widgets";
 import Login from "./components/Login";
 import { useStateValue } from "./StateProvider";
+import Contacts from "./components/Contacts";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -16,10 +16,9 @@ function App() {
         <>
           <Header />
           <div className="app__body">
-            {console.log(user)}
             <Sidebar />
             <Feed />
-            <Widgets />
+            <Contacts />
           </div>
         </>
       )}

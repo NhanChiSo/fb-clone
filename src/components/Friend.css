@@ -1,0 +1,37 @@
+.friend {
+  display: flex;
+  padding: 5px;
+  padding-right: 0px;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.friend:hover {
+  background-color: #e4e6e9;
+}
+
+.friend > h5 {
+  margin-left: 10px;
+}
+
+.friend > .MuiAvatar-root {
+  position: relative;
+  overflow: unset;
+}
+
+.friend > .MuiAvatar-root > img {
+  border-radius: 50%;
+}
+
+.friend > .MuiAvatar-root:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+  border: 2px solid white;
+}

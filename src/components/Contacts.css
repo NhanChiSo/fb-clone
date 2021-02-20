@@ -1,0 +1,60 @@
+.contacts {
+  width: 21%;
+  position: fixed;
+  top: 60px;
+  padding: 15px 5px 15px 10px;
+  right: 0;
+  overflow-y: scroll;
+  height: calc(100vh - 80px);
+}
+
+.advs {
+  display: flex;
+  flex-direction: column;
+}
+
+.advs:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  border-bottom: 2px solid #ced0d4;
+}
+
+.advs > h3 {
+  padding-left: 10px;
+  margin-bottom: 5px;
+  color: #65676b;
+}
+
+.advs__content {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.advs__content:hover {
+  background-color: #e4e6e9;
+}
+
+.advs__content > img {
+  width: 33%;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.advs__desc > p {
+  color: #65676b;
+}
+
+.contacts__friends {
+  padding: 10px 0px 20px 5px;
+}
+
+.contacts__friends > h3 {
+  padding-left: 5px;
+  margin-bottom: 10px;
+  color: #65676b;
+}

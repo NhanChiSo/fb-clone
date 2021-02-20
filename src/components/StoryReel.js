@@ -1,15 +1,23 @@
 import React from "react";
 import Story from "./Story";
 import "./StoryReel.css";
+import { useStateValue } from "../StateProvider";
+import AddCircleIcon from "@material-ui/icons/AddCircle";
 
 function StoryReel() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="story__reel">
-      <Story
-        image="https://sohanews.sohacdn.com/k:thumb_w/640/2015/4-1448340727088/cuoc-doi-va-vo-hoc-cua-thien-kiem-vo-danh.jpg"
-        profileSrc="https://genk.mediacdn.vn/k:2014/vodanh-1414148085174/game-thuan-viet-phong-van-truyen-bat-ngo-lo-dien.jpg"
-        title="Vô Danh"
-      />
+      <div className="story story__user">
+        <div
+          className="story__Img"
+          style={{ backgroundImage: `url(${user.photoURL})` }}
+        ></div>
+        <AddCircleIcon className="story__add" />
+        <h4>Create a Story</h4>
+        <div className="story__layout"></div>
+      </div>
       <Story
         image="http://3.bp.blogspot.com/-T6nl1Fb0G7c/U7_iyjeRjUI/AAAAAAAA51M/aEZeqjMw0bc/s1600/tuyet-the-hao-kiem-bo-kinh-van.jpg"
         profileSrc="https://gamek.mediacdn.vn/thumb_w/600/2014/img20140911094747935-crop1410404064629p.jpg"

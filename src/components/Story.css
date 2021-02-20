@@ -1,20 +1,76 @@
 .story {
   position: relative;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 120px;
+  width: 19%;
   height: 200px;
   box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin-right: 10px;
-  transition: transform 0.1s ease-in;
   cursor: pointer;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.story:hover {
-  transform: scale(1.07);
+.story:last-child {
+  margin-right: 0px;
+}
+
+.story__user {
+  text-align: center;
+}
+
+.story__user::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 32%;
+  bottom: 0;
+  left: 0;
+  background-color: #242526;
+}
+
+.story__user > .MuiSvgIcon-root {
+  font-size: xx-large;
+  position: absolute;
+  left: 50%;
+  bottom: 23%;
+  transform: translateX(-50%);
+  color: #2e89ff;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.story__layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.story:hover .story__layout {
+  opacity: 1;
+  visibility: visible;
+}
+
+.story__Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+
+.story:hover .story__Img {
+  transform: scale(1.02);
 }
 
 .story__avatar {
@@ -26,7 +82,9 @@
 
 .story > h4 {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  padding: 0 10px;
   color: white;
+  z-index: 10;
+  line-height: 1;
 }

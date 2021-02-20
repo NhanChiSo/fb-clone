@@ -16,9 +16,13 @@ function Post({ profileImg, image, name, time, message }) {
       <div className="post__mess">
         <p>{message}</p>
       </div>
-      <div className="post__img">
-        <img src={image} />
-      </div>
+      {!image ? (
+        ""
+      ) : (
+        <div className="post__img">
+          <img src={image} />
+        </div>
+      )}
       <div className="post__options">
         <div className="post__option">
           <ThumbUp />

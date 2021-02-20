@@ -18,6 +18,7 @@ import { useStateValue } from "../StateProvider";
 
 function Header() {
   const [{ user }, dispatch] = useStateValue();
+  var name = user.displayName.split(" ");
   return (
     <div className="header">
       <div className="header__left">
@@ -27,7 +28,7 @@ function Header() {
         ></img>
         <div className="header__input">
           <Search />
-          <input type="text" placeholder="Tìm kiếm trên Facebook"></input>
+          <input type="text" placeholder="Search Facebook"></input>
         </div>
       </div>
       <div className="header__center">
@@ -50,7 +51,7 @@ function Header() {
       <div className="header__right">
         <div className="header__info">
           <Avatar src={user.photoURL} />
-          <h4>{user.displayName}</h4>
+          <h4>{name[0]}</h4>
         </div>
         <IconButton>
           <Add />
