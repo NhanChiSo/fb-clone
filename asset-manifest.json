@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fb-clone-ReactHook/static/css/main.f2ba8e25.chunk.css",
+    "main.js": "/fb-clone-ReactHook/static/js/main.eb588774.chunk.js",
+    "main.js.map": "/fb-clone-ReactHook/static/js/main.eb588774.chunk.js.map",
+    "runtime-main.js": "/fb-clone-ReactHook/static/js/runtime-main.b43e380c.js",
+    "runtime-main.js.map": "/fb-clone-ReactHook/static/js/runtime-main.b43e380c.js.map",
+    "static/js/2.13d4472e.chunk.js": "/fb-clone-ReactHook/static/js/2.13d4472e.chunk.js",
+    "static/js/2.13d4472e.chunk.js.map": "/fb-clone-ReactHook/static/js/2.13d4472e.chunk.js.map",
+    "static/js/3.a3371adb.chunk.js": "/fb-clone-ReactHook/static/js/3.a3371adb.chunk.js",
+    "static/js/3.a3371adb.chunk.js.map": "/fb-clone-ReactHook/static/js/3.a3371adb.chunk.js.map",
+    "index.html": "/fb-clone-ReactHook/index.html",
+    "static/css/main.f2ba8e25.chunk.css.map": "/fb-clone-ReactHook/static/css/main.f2ba8e25.chunk.css.map",
+    "static/js/2.13d4472e.chunk.js.LICENSE.txt": "/fb-clone-ReactHook/static/js/2.13d4472e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b43e380c.js",
+    "static/js/2.13d4472e.chunk.js",
+    "static/css/main.f2ba8e25.chunk.css",
+    "static/js/main.eb588774.chunk.js"
+  ]
+}
